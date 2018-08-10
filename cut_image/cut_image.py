@@ -17,7 +17,7 @@ def fill_image(image):
     if width > height: #宽大于高竖向粘贴在背景中间坐标(X1,0)
         new_image.paste(image, (0, int((bg_length - height) / 2)))
     else: #高大于宽横向粘贴在背景中间坐标(0,y1)
-        new_image.paste(image, (int((bg_length - width) / 2, 0)))
+        new_image.paste(image, (int((bg_length - width) / 2), 0))
     return new_image
 
 #将图片切成9块
